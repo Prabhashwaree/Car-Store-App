@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Forms\post-login-admin\admin-controls\CarManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-controls\CarPartsManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-controls\CustomerManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-controls\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-controls\OrderManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-controls\ReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-sub-window\CustomerDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-sub-window\OrderCarDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\admin-sub-window\OrderCarPartDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-admin\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-controls\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-controls\OrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-controls\ViewCarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-controls\ViewCarPartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-sub-window\OrderCarDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-sub-window\OrderCarPartDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\customer-sub-window\ViewCarDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\post-login-customer\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\pre-login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\pre-login\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
