@@ -28,186 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewCars = new System.Windows.Forms.DataGridView();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.groupBoxCarDetails = new System.Windows.Forms.GroupBox();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblYear = new System.Windows.Forms.Label();
-            this.lblManufacturer = new System.Windows.Forms.Label();
-            this.lblModel = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtYear = new System.Windows.Forms.TextBox();
-            this.txtManufacturer = new System.Windows.Forms.TextBox();
-            this.txtModel = new System.Windows.Forms.TextBox();
-            this.groupBoxDescription = new System.Windows.Forms.GroupBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.groupBoxSearch = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCars)).BeginInit();
-            this.groupBoxCarDetails.SuspendLayout();
-            this.groupBoxDescription.SuspendLayout();
-            this.groupBoxSearch.SuspendLayout();
-            this.SuspendLayout();
+            dataGridViewCars = new DataGridView();
+            btnSave = new Button();
+            txtSearch = new TextBox();
+            groupBoxCarDetails = new GroupBox();
+            lblPrice = new Label();
+            groupBoxDescription = new GroupBox();
+            txtDescription = new TextBox();
+            lblYear = new Label();
+            lblManufacturer = new Label();
+            lblModel = new Label();
+            txtPrice = new TextBox();
+            txtYear = new TextBox();
+            txtManufacturer = new TextBox();
+            txtModel = new TextBox();
+            groupBoxSearch = new GroupBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCars).BeginInit();
+            groupBoxCarDetails.SuspendLayout();
+            groupBoxDescription.SuspendLayout();
+            groupBoxSearch.SuspendLayout();
+            SuspendLayout();
             // 
             // dataGridViewCars
             // 
-            this.dataGridViewCars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCars.Location = new System.Drawing.Point(17, 245);
-            this.dataGridViewCars.Name = "dataGridViewCars";
-            this.dataGridViewCars.RowHeadersWidth = 51;
-            this.dataGridViewCars.Size = new System.Drawing.Size(854, 268);
-            this.dataGridViewCars.TabIndex = 0;
-            this.dataGridViewCars.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewCars_CellClick);
+            dataGridViewCars.BackgroundColor = Color.Azure;
+            dataGridViewCars.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCars.Location = new Point(17, 263);
+            dataGridViewCars.Name = "dataGridViewCars";
+            dataGridViewCars.RowHeadersWidth = 51;
+            dataGridViewCars.Size = new Size(865, 250);
+            dataGridViewCars.TabIndex = 0;
+            dataGridViewCars.CellClick += DataGridViewCars_CellClick;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(752, 189);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(119, 23);
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.BtnSaveOrEdit_Click);
+            btnSave.BackColor = Color.DeepSkyBlue;
+            btnSave.Location = new Point(688, 103);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(156, 34);
+            btnSave.TabIndex = 6;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += BtnSaveOrEdit_Click;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(22, 28);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(344, 22);
-            this.txtSearch.TabIndex = 13;
-            this.txtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
+            txtSearch.Location = new Point(22, 28);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(300, 23);
+            txtSearch.TabIndex = 13;
+            txtSearch.TextChanged += TxtSearch_TextChanged;
             // 
             // groupBoxCarDetails
             // 
-            this.groupBoxCarDetails.Controls.Add(this.lblPrice);
-            this.groupBoxCarDetails.Controls.Add(this.lblYear);
-            this.groupBoxCarDetails.Controls.Add(this.lblManufacturer);
-            this.groupBoxCarDetails.Controls.Add(this.lblModel);
-            this.groupBoxCarDetails.Controls.Add(this.txtPrice);
-            this.groupBoxCarDetails.Controls.Add(this.txtYear);
-            this.groupBoxCarDetails.Controls.Add(this.txtManufacturer);
-            this.groupBoxCarDetails.Controls.Add(this.txtModel);
-            this.groupBoxCarDetails.Location = new System.Drawing.Point(17, 13);
-            this.groupBoxCarDetails.Name = "groupBoxCarDetails";
-            this.groupBoxCarDetails.Size = new System.Drawing.Size(386, 156);
-            this.groupBoxCarDetails.TabIndex = 14;
-            this.groupBoxCarDetails.TabStop = false;
-            this.groupBoxCarDetails.Text = "Car Details";
+            groupBoxCarDetails.BackColor = Color.Azure;
+            groupBoxCarDetails.Controls.Add(lblPrice);
+            groupBoxCarDetails.Controls.Add(groupBoxDescription);
+            groupBoxCarDetails.Controls.Add(btnSave);
+            groupBoxCarDetails.Controls.Add(lblYear);
+            groupBoxCarDetails.Controls.Add(lblManufacturer);
+            groupBoxCarDetails.Controls.Add(lblModel);
+            groupBoxCarDetails.Controls.Add(txtPrice);
+            groupBoxCarDetails.Controls.Add(txtYear);
+            groupBoxCarDetails.Controls.Add(txtManufacturer);
+            groupBoxCarDetails.Controls.Add(txtModel);
+            groupBoxCarDetails.Location = new Point(17, 13);
+            groupBoxCarDetails.Name = "groupBoxCarDetails";
+            groupBoxCarDetails.Size = new Size(865, 156);
+            groupBoxCarDetails.TabIndex = 14;
+            groupBoxCarDetails.TabStop = false;
+            groupBoxCarDetails.Text = "Car Details";
             // 
             // lblPrice
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(20, 119);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(41, 16);
-            this.lblPrice.TabIndex = 18;
-            this.lblPrice.Text = "Price:";
-            // 
-            // lblYear
-            // 
-            this.lblYear.AutoSize = true;
-            this.lblYear.Location = new System.Drawing.Point(19, 88);
-            this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(39, 16);
-            this.lblYear.TabIndex = 17;
-            this.lblYear.Text = "Year:";
-            // 
-            // lblManufacturer
-            // 
-            this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Location = new System.Drawing.Point(19, 59);
-            this.lblManufacturer.Name = "lblManufacturer";
-            this.lblManufacturer.Size = new System.Drawing.Size(87, 16);
-            this.lblManufacturer.TabIndex = 16;
-            this.lblManufacturer.Text = "Manufacturer:";
-            // 
-            // lblModel
-            // 
-            this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(20, 32);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(48, 16);
-            this.lblModel.TabIndex = 15;
-            this.lblModel.Text = "Model:";
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(130, 116);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(200, 22);
-            this.txtPrice.TabIndex = 14;
-            // 
-            // txtYear
-            // 
-            this.txtYear.Location = new System.Drawing.Point(130, 85);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(200, 22);
-            this.txtYear.TabIndex = 13;
-            // 
-            // txtManufacturer
-            // 
-            this.txtManufacturer.Location = new System.Drawing.Point(130, 56);
-            this.txtManufacturer.Name = "txtManufacturer";
-            this.txtManufacturer.Size = new System.Drawing.Size(200, 22);
-            this.txtManufacturer.TabIndex = 12;
-            // 
-            // txtModel
-            // 
-            this.txtModel.Location = new System.Drawing.Point(130, 29);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(200, 22);
-            this.txtModel.TabIndex = 11;
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblPrice.Location = new Point(19, 117);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(38, 15);
+            lblPrice.TabIndex = 18;
+            lblPrice.Text = "Price:";
             // 
             // groupBoxDescription
             // 
-            this.groupBoxDescription.Controls.Add(this.txtDescription);
-            this.groupBoxDescription.Location = new System.Drawing.Point(426, 13);
-            this.groupBoxDescription.Name = "groupBoxDescription";
-            this.groupBoxDescription.Size = new System.Drawing.Size(445, 156);
-            this.groupBoxDescription.TabIndex = 15;
-            this.groupBoxDescription.TabStop = false;
-            this.groupBoxDescription.Text = "Description";
+            groupBoxDescription.Controls.Add(txtDescription);
+            groupBoxDescription.Location = new Point(522, 22);
+            groupBoxDescription.Name = "groupBoxDescription";
+            groupBoxDescription.Size = new Size(322, 64);
+            groupBoxDescription.TabIndex = 15;
+            groupBoxDescription.TabStop = false;
+            groupBoxDescription.Text = "Description";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(22, 22);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(401, 113);
-            this.txtDescription.TabIndex = 6;
+            txtDescription.Location = new Point(22, 22);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(284, 30);
+            txtDescription.TabIndex = 6;
+            // 
+            // lblYear
+            // 
+            lblYear.AutoSize = true;
+            lblYear.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblYear.Location = new Point(19, 88);
+            lblYear.Name = "lblYear";
+            lblYear.Size = new Size(34, 15);
+            lblYear.TabIndex = 17;
+            lblYear.Text = "Year:";
+            // 
+            // lblManufacturer
+            // 
+            lblManufacturer.AutoSize = true;
+            lblManufacturer.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblManufacturer.Location = new Point(19, 59);
+            lblManufacturer.Name = "lblManufacturer";
+            lblManufacturer.Size = new Size(87, 15);
+            lblManufacturer.TabIndex = 16;
+            lblManufacturer.Text = "Manufacturer:";
+            // 
+            // lblModel
+            // 
+            lblModel.AutoSize = true;
+            lblModel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblModel.Location = new Point(20, 32);
+            lblModel.Name = "lblModel";
+            lblModel.Size = new Size(45, 15);
+            lblModel.TabIndex = 15;
+            lblModel.Text = "Model:";
+            // 
+            // txtPrice
+            // 
+            txtPrice.Location = new Point(130, 114);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(256, 23);
+            txtPrice.TabIndex = 14;
+            txtPrice.TextChanged += txtPrice_TextChanged;
+            // 
+            // txtYear
+            // 
+            txtYear.Location = new Point(130, 85);
+            txtYear.Name = "txtYear";
+            txtYear.Size = new Size(256, 23);
+            txtYear.TabIndex = 13;
+            // 
+            // txtManufacturer
+            // 
+            txtManufacturer.Location = new Point(130, 56);
+            txtManufacturer.Name = "txtManufacturer";
+            txtManufacturer.Size = new Size(256, 23);
+            txtManufacturer.TabIndex = 12;
+            // 
+            // txtModel
+            // 
+            txtModel.Location = new Point(130, 29);
+            txtModel.Name = "txtModel";
+            txtModel.Size = new Size(256, 23);
+            txtModel.TabIndex = 11;
             // 
             // groupBoxSearch
             // 
-            this.groupBoxSearch.Controls.Add(this.txtSearch);
-            this.groupBoxSearch.Location = new System.Drawing.Point(17, 172);
-            this.groupBoxSearch.Name = "groupBoxSearch";
-            this.groupBoxSearch.Size = new System.Drawing.Size(386, 62);
-            this.groupBoxSearch.TabIndex = 16;
-            this.groupBoxSearch.TabStop = false;
-            this.groupBoxSearch.Text = "Search";
+            groupBoxSearch.Controls.Add(txtSearch);
+            groupBoxSearch.Location = new Point(539, 191);
+            groupBoxSearch.Name = "groupBoxSearch";
+            groupBoxSearch.Size = new Size(343, 62);
+            groupBoxSearch.TabIndex = 16;
+            groupBoxSearch.TabStop = false;
+            groupBoxSearch.Text = "Search";
             // 
             // CarManagementControl
             // 
-            this.Controls.Add(this.groupBoxSearch);
-            this.Controls.Add(this.groupBoxDescription);
-            this.Controls.Add(this.groupBoxCarDetails);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.dataGridViewCars);
-            this.Name = "CarManagementControl";
-            this.Size = new System.Drawing.Size(901, 526);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCars)).EndInit();
-            this.groupBoxCarDetails.ResumeLayout(false);
-            this.groupBoxCarDetails.PerformLayout();
-            this.groupBoxDescription.ResumeLayout(false);
-            this.groupBoxDescription.PerformLayout();
-            this.groupBoxSearch.ResumeLayout(false);
-            this.groupBoxSearch.PerformLayout();
-            this.ResumeLayout(false);
-
+            BackgroundImage = CarStoreApp1.Properties.Resources.pngtree_grunge_wall_texture_scratched_off_white_background_image_77414710;
+            Controls.Add(groupBoxSearch);
+            Controls.Add(groupBoxCarDetails);
+            Controls.Add(dataGridViewCars);
+            Name = "CarManagementControl";
+            Size = new Size(901, 526);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCars).EndInit();
+            groupBoxCarDetails.ResumeLayout(false);
+            groupBoxCarDetails.PerformLayout();
+            groupBoxDescription.ResumeLayout(false);
+            groupBoxDescription.PerformLayout();
+            groupBoxSearch.ResumeLayout(false);
+            groupBoxSearch.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        
+
     }
 }

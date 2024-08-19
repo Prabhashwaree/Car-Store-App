@@ -290,5 +290,10 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
             editCarID = null; // Reset edit mode
             btnSave.Text = "Save"; // Reset button text to "Save"
         }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

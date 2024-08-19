@@ -83,3 +83,4 @@ D:\personal\Esoft Campus\AD (aaplication devolopment)\AD Course Work\AD Course w
 D:\personal\Esoft Campus\AD (aaplication devolopment)\AD Course Work\AD Course work 1\CarStoreApp1\obj\Debug\net8.0-windows\CarStoreApp1.genruntimeconfig.cache
 D:\personal\Esoft Campus\AD (aaplication devolopment)\AD Course Work\AD Course work 1\CarStoreApp1\obj\Debug\net8.0-windows\ref\CarStoreApp1.dll
 D:\personal\Esoft Campus\AD (aaplication devolopment)\AD Course Work\AD Course work 1\CarStoreApp1\obj\Debug\net8.0-windows\CarStoreApp1.Properties.Resources.resources
+D:\personal\Esoft Campus\AD (aaplication devolopment)\AD Course Work\AD Course work 1\CarStoreApp1\obj\Debug\net8.0-windows\CarStoreApp1.sourcelink.json

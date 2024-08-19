@@ -28,238 +28,243 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblCustomerID = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.lblNIC = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblTotalOrders = new System.Windows.Forms.Label();
-            this.lblCustomerIDValue = new System.Windows.Forms.Label();
-            this.lblFirstNameValue = new System.Windows.Forms.Label();
-            this.lblLastNameValue = new System.Windows.Forms.Label();
-            this.lblEmailValue = new System.Windows.Forms.Label();
-            this.lblPhoneValue = new System.Windows.Forms.Label();
-            this.lblNICValue = new System.Windows.Forms.Label();
-            this.lblAddressValue = new System.Windows.Forms.Label();
-            this.lblTotalOrdersValue = new System.Windows.Forms.Label();
-            this.groupBoxPersonalInfo = new System.Windows.Forms.GroupBox();
-            this.groupBoxContactDetails = new System.Windows.Forms.GroupBox();
-            this.groupBoxOrderDetails = new System.Windows.Forms.GroupBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.groupBoxPersonalInfo.SuspendLayout();
-            this.groupBoxContactDetails.SuspendLayout();
-            this.groupBoxOrderDetails.SuspendLayout();
-            this.SuspendLayout();
+            lblCustomerID = new Label();
+            lblFirstName = new Label();
+            lblLastName = new Label();
+            lblEmail = new Label();
+            lblPhone = new Label();
+            lblNIC = new Label();
+            lblAddress = new Label();
+            lblTotalOrders = new Label();
+            lblCustomerIDValue = new Label();
+            lblFirstNameValue = new Label();
+            lblLastNameValue = new Label();
+            lblEmailValue = new Label();
+            lblPhoneValue = new Label();
+            lblNICValue = new Label();
+            lblAddressValue = new Label();
+            lblTotalOrdersValue = new Label();
+            groupBoxPersonalInfo = new GroupBox();
+            groupBoxContactDetails = new GroupBox();
+            groupBoxOrderDetails = new GroupBox();
+            btnClose = new Button();
+            groupBoxPersonalInfo.SuspendLayout();
+            groupBoxContactDetails.SuspendLayout();
+            groupBoxOrderDetails.SuspendLayout();
+            SuspendLayout();
             // 
             // lblCustomerID
             // 
-            this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Location = new System.Drawing.Point(10, 25);
-            this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(83, 16);
-            this.lblCustomerID.TabIndex = 0;
-            this.lblCustomerID.Text = "Customer ID:";
+            lblCustomerID.AutoSize = true;
+            lblCustomerID.Location = new Point(10, 25);
+            lblCustomerID.Name = "lblCustomerID";
+            lblCustomerID.Size = new Size(76, 15);
+            lblCustomerID.TabIndex = 0;
+            lblCustomerID.Text = "Customer ID:";
             // 
             // lblFirstName
             // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(10, 55);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(75, 16);
-            this.lblFirstName.TabIndex = 1;
-            this.lblFirstName.Text = "First Name:";
+            lblFirstName.AutoSize = true;
+            lblFirstName.Location = new Point(10, 55);
+            lblFirstName.Name = "lblFirstName";
+            lblFirstName.Size = new Size(67, 15);
+            lblFirstName.TabIndex = 1;
+            lblFirstName.Text = "First Name:";
             // 
             // lblLastName
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(10, 85);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(75, 16);
-            this.lblLastName.TabIndex = 2;
-            this.lblLastName.Text = "Last Name:";
+            lblLastName.AutoSize = true;
+            lblLastName.Location = new Point(10, 85);
+            lblLastName.Name = "lblLastName";
+            lblLastName.Size = new Size(66, 15);
+            lblLastName.TabIndex = 2;
+            lblLastName.Text = "Last Name:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(10, 30);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(44, 16);
-            this.lblEmail.TabIndex = 3;
-            this.lblEmail.Text = "Email:";
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(10, 30);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(39, 15);
+            lblEmail.TabIndex = 3;
+            lblEmail.Text = "Email:";
             // 
             // lblPhone
             // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(10, 65);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(49, 16);
-            this.lblPhone.TabIndex = 4;
-            this.lblPhone.Text = "Phone:";
+            lblPhone.AutoSize = true;
+            lblPhone.Location = new Point(10, 57);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(44, 15);
+            lblPhone.TabIndex = 4;
+            lblPhone.Text = "Phone:";
             // 
             // lblNIC
             // 
-            this.lblNIC.AutoSize = true;
-            this.lblNIC.Location = new System.Drawing.Point(10, 120);
-            this.lblNIC.Name = "lblNIC";
-            this.lblNIC.Size = new System.Drawing.Size(32, 16);
-            this.lblNIC.TabIndex = 12;
-            this.lblNIC.Text = "NIC:";
+            lblNIC.AutoSize = true;
+            lblNIC.Location = new Point(232, 25);
+            lblNIC.Name = "lblNIC";
+            lblNIC.Size = new Size(30, 15);
+            lblNIC.TabIndex = 12;
+            lblNIC.Text = "NIC:";
             // 
             // lblAddress
             // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(10, 97);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(61, 16);
-            this.lblAddress.TabIndex = 14;
-            this.lblAddress.Text = "Address:";
+            lblAddress.AutoSize = true;
+            lblAddress.Location = new Point(10, 85);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(52, 15);
+            lblAddress.TabIndex = 14;
+            lblAddress.Text = "Address:";
             // 
             // lblTotalOrders
             // 
-            this.lblTotalOrders.AutoSize = true;
-            this.lblTotalOrders.Location = new System.Drawing.Point(10, 25);
-            this.lblTotalOrders.Name = "lblTotalOrders";
-            this.lblTotalOrders.Size = new System.Drawing.Size(85, 16);
-            this.lblTotalOrders.TabIndex = 5;
-            this.lblTotalOrders.Text = "Total Orders:";
+            lblTotalOrders.AutoSize = true;
+            lblTotalOrders.Location = new Point(10, 25);
+            lblTotalOrders.Name = "lblTotalOrders";
+            lblTotalOrders.Size = new Size(73, 15);
+            lblTotalOrders.TabIndex = 5;
+            lblTotalOrders.Text = "Total Orders:";
             // 
             // lblCustomerIDValue
             // 
-            this.lblCustomerIDValue.AutoSize = true;
-            this.lblCustomerIDValue.Location = new System.Drawing.Point(120, 25);
-            this.lblCustomerIDValue.Name = "lblCustomerIDValue";
-            this.lblCustomerIDValue.Size = new System.Drawing.Size(0, 16);
-            this.lblCustomerIDValue.TabIndex = 6;
+            lblCustomerIDValue.AutoSize = true;
+            lblCustomerIDValue.Location = new Point(97, 28);
+            lblCustomerIDValue.Name = "lblCustomerIDValue";
+            lblCustomerIDValue.Size = new Size(0, 15);
+            lblCustomerIDValue.TabIndex = 6;
             // 
             // lblFirstNameValue
             // 
-            this.lblFirstNameValue.AutoSize = true;
-            this.lblFirstNameValue.Location = new System.Drawing.Point(120, 55);
-            this.lblFirstNameValue.Name = "lblFirstNameValue";
-            this.lblFirstNameValue.Size = new System.Drawing.Size(0, 16);
-            this.lblFirstNameValue.TabIndex = 7;
+            lblFirstNameValue.AutoSize = true;
+            lblFirstNameValue.Location = new Point(97, 58);
+            lblFirstNameValue.Name = "lblFirstNameValue";
+            lblFirstNameValue.Size = new Size(0, 15);
+            lblFirstNameValue.TabIndex = 7;
             // 
             // lblLastNameValue
             // 
-            this.lblLastNameValue.AutoSize = true;
-            this.lblLastNameValue.Location = new System.Drawing.Point(120, 85);
-            this.lblLastNameValue.Name = "lblLastNameValue";
-            this.lblLastNameValue.Size = new System.Drawing.Size(0, 16);
-            this.lblLastNameValue.TabIndex = 8;
+            lblLastNameValue.AutoSize = true;
+            lblLastNameValue.Location = new Point(97, 88);
+            lblLastNameValue.Name = "lblLastNameValue";
+            lblLastNameValue.Size = new Size(0, 15);
+            lblLastNameValue.TabIndex = 8;
             // 
             // lblEmailValue
             // 
-            this.lblEmailValue.AutoSize = true;
-            this.lblEmailValue.Location = new System.Drawing.Point(120, 30);
-            this.lblEmailValue.Name = "lblEmailValue";
-            this.lblEmailValue.Size = new System.Drawing.Size(0, 16);
-            this.lblEmailValue.TabIndex = 9;
+            lblEmailValue.AutoSize = true;
+            lblEmailValue.Location = new Point(76, 30);
+            lblEmailValue.Name = "lblEmailValue";
+            lblEmailValue.Size = new Size(0, 15);
+            lblEmailValue.TabIndex = 9;
             // 
             // lblPhoneValue
             // 
-            this.lblPhoneValue.AutoSize = true;
-            this.lblPhoneValue.Location = new System.Drawing.Point(120, 65);
-            this.lblPhoneValue.Name = "lblPhoneValue";
-            this.lblPhoneValue.Size = new System.Drawing.Size(0, 16);
-            this.lblPhoneValue.TabIndex = 10;
+            lblPhoneValue.AutoSize = true;
+            lblPhoneValue.Location = new Point(76, 57);
+            lblPhoneValue.Name = "lblPhoneValue";
+            lblPhoneValue.Size = new Size(0, 15);
+            lblPhoneValue.TabIndex = 10;
             // 
             // lblNICValue
             // 
-            this.lblNICValue.AutoSize = true;
-            this.lblNICValue.Location = new System.Drawing.Point(120, 120);
-            this.lblNICValue.Name = "lblNICValue";
-            this.lblNICValue.Size = new System.Drawing.Size(0, 16);
-            this.lblNICValue.TabIndex = 13;
+            lblNICValue.AutoSize = true;
+            lblNICValue.Location = new Point(271, 25);
+            lblNICValue.Name = "lblNICValue";
+            lblNICValue.Size = new Size(0, 15);
+            lblNICValue.TabIndex = 13;
             // 
             // lblAddressValue
             // 
-            this.lblAddressValue.AutoSize = true;
-            this.lblAddressValue.Location = new System.Drawing.Point(120, 97);
-            this.lblAddressValue.Name = "lblAddressValue";
-            this.lblAddressValue.Size = new System.Drawing.Size(0, 16);
-            this.lblAddressValue.TabIndex = 15;
+            lblAddressValue.AutoSize = true;
+            lblAddressValue.Location = new Point(76, 85);
+            lblAddressValue.Name = "lblAddressValue";
+            lblAddressValue.Size = new Size(0, 15);
+            lblAddressValue.TabIndex = 15;
             // 
             // lblTotalOrdersValue
             // 
-            this.lblTotalOrdersValue.AutoSize = true;
-            this.lblTotalOrdersValue.Location = new System.Drawing.Point(120, 25);
-            this.lblTotalOrdersValue.Name = "lblTotalOrdersValue";
-            this.lblTotalOrdersValue.Size = new System.Drawing.Size(0, 16);
-            this.lblTotalOrdersValue.TabIndex = 11;
+            lblTotalOrdersValue.AutoSize = true;
+            lblTotalOrdersValue.Location = new Point(96, 26);
+            lblTotalOrdersValue.Name = "lblTotalOrdersValue";
+            lblTotalOrdersValue.Size = new Size(0, 15);
+            lblTotalOrdersValue.TabIndex = 11;
             // 
             // groupBoxPersonalInfo
             // 
-            this.groupBoxPersonalInfo.Controls.Add(this.lblNIC);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblCustomerID);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblNICValue);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblFirstName);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblLastName);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblCustomerIDValue);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblFirstNameValue);
-            this.groupBoxPersonalInfo.Controls.Add(this.lblLastNameValue);
-            this.groupBoxPersonalInfo.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxPersonalInfo.Name = "groupBoxPersonalInfo";
-            this.groupBoxPersonalInfo.Size = new System.Drawing.Size(570, 154);
-            this.groupBoxPersonalInfo.TabIndex = 16;
-            this.groupBoxPersonalInfo.TabStop = false;
-            this.groupBoxPersonalInfo.Text = "Personal Information";
+            groupBoxPersonalInfo.BackColor = Color.Azure;
+            groupBoxPersonalInfo.Controls.Add(lblNIC);
+            groupBoxPersonalInfo.Controls.Add(lblCustomerID);
+            groupBoxPersonalInfo.Controls.Add(lblNICValue);
+            groupBoxPersonalInfo.Controls.Add(lblFirstName);
+            groupBoxPersonalInfo.Controls.Add(lblLastName);
+            groupBoxPersonalInfo.Controls.Add(lblCustomerIDValue);
+            groupBoxPersonalInfo.Controls.Add(lblFirstNameValue);
+            groupBoxPersonalInfo.Controls.Add(lblLastNameValue);
+            groupBoxPersonalInfo.Location = new Point(12, 12);
+            groupBoxPersonalInfo.Name = "groupBoxPersonalInfo";
+            groupBoxPersonalInfo.Size = new Size(440, 115);
+            groupBoxPersonalInfo.TabIndex = 16;
+            groupBoxPersonalInfo.TabStop = false;
+            groupBoxPersonalInfo.Text = "Personal Information";
             // 
             // groupBoxContactDetails
             // 
-            this.groupBoxContactDetails.Controls.Add(this.lblAddress);
-            this.groupBoxContactDetails.Controls.Add(this.lblEmail);
-            this.groupBoxContactDetails.Controls.Add(this.lblAddressValue);
-            this.groupBoxContactDetails.Controls.Add(this.lblPhone);
-            this.groupBoxContactDetails.Controls.Add(this.lblPhoneValue);
-            this.groupBoxContactDetails.Controls.Add(this.lblEmailValue);
-            this.groupBoxContactDetails.Location = new System.Drawing.Point(12, 172);
-            this.groupBoxContactDetails.Name = "groupBoxContactDetails";
-            this.groupBoxContactDetails.Size = new System.Drawing.Size(570, 148);
-            this.groupBoxContactDetails.TabIndex = 17;
-            this.groupBoxContactDetails.TabStop = false;
-            this.groupBoxContactDetails.Text = "Contact Details";
+            groupBoxContactDetails.BackColor = Color.Azure;
+            groupBoxContactDetails.Controls.Add(lblAddress);
+            groupBoxContactDetails.Controls.Add(lblEmail);
+            groupBoxContactDetails.Controls.Add(lblAddressValue);
+            groupBoxContactDetails.Controls.Add(lblPhone);
+            groupBoxContactDetails.Controls.Add(lblPhoneValue);
+            groupBoxContactDetails.Controls.Add(lblEmailValue);
+            groupBoxContactDetails.Location = new Point(467, 12);
+            groupBoxContactDetails.Name = "groupBoxContactDetails";
+            groupBoxContactDetails.Size = new Size(403, 115);
+            groupBoxContactDetails.TabIndex = 17;
+            groupBoxContactDetails.TabStop = false;
+            groupBoxContactDetails.Text = "Contact Details";
             // 
             // groupBoxOrderDetails
             // 
-            this.groupBoxOrderDetails.Controls.Add(this.lblTotalOrders);
-            this.groupBoxOrderDetails.Controls.Add(this.lblTotalOrdersValue);
-            this.groupBoxOrderDetails.Location = new System.Drawing.Point(12, 336);
-            this.groupBoxOrderDetails.Name = "groupBoxOrderDetails";
-            this.groupBoxOrderDetails.Size = new System.Drawing.Size(570, 80);
-            this.groupBoxOrderDetails.TabIndex = 18;
-            this.groupBoxOrderDetails.TabStop = false;
-            this.groupBoxOrderDetails.Text = "Order Details";
+            groupBoxOrderDetails.BackColor = Color.Azure;
+            groupBoxOrderDetails.Controls.Add(lblTotalOrders);
+            groupBoxOrderDetails.Controls.Add(lblTotalOrdersValue);
+            groupBoxOrderDetails.Location = new Point(12, 142);
+            groupBoxOrderDetails.Name = "groupBoxOrderDetails";
+            groupBoxOrderDetails.Size = new Size(440, 57);
+            groupBoxOrderDetails.TabIndex = 18;
+            groupBoxOrderDetails.TabStop = false;
+            groupBoxOrderDetails.Text = "Order Details";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(232, 443);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 28);
-            this.btnClose.TabIndex = 19;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            btnClose.BackColor = Color.SlateGray;
+            btnClose.Location = new Point(725, 159);
+            btnClose.Margin = new Padding(4);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(145, 40);
+            btnClose.TabIndex = 19;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += BtnClose_Click;
             // 
             // CustomerDetailForm
             // 
-            this.ClientSize = new System.Drawing.Size(594, 499);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.groupBoxOrderDetails);
-            this.Controls.Add(this.groupBoxContactDetails);
-            this.Controls.Add(this.groupBoxPersonalInfo);
-            this.Name = "CustomerDetailForm";
-            this.Text = "Customer Details";
-            this.groupBoxPersonalInfo.ResumeLayout(false);
-            this.groupBoxPersonalInfo.PerformLayout();
-            this.groupBoxContactDetails.ResumeLayout(false);
-            this.groupBoxContactDetails.PerformLayout();
-            this.groupBoxOrderDetails.ResumeLayout(false);
-            this.groupBoxOrderDetails.PerformLayout();
-            this.ResumeLayout(false);
-
+            BackgroundImage = CarStoreApp1.Properties.Resources.pngtree_grunge_wall_texture_scratched_off_white_background_image_77414710;
+            ClientSize = new Size(882, 216);
+            Controls.Add(btnClose);
+            Controls.Add(groupBoxOrderDetails);
+            Controls.Add(groupBoxContactDetails);
+            Controls.Add(groupBoxPersonalInfo);
+            MaximizeBox = false;
+            Name = "CustomerDetailForm";
+            Text = "Customer Details";
+            groupBoxPersonalInfo.ResumeLayout(false);
+            groupBoxPersonalInfo.PerformLayout();
+            groupBoxContactDetails.ResumeLayout(false);
+            groupBoxContactDetails.PerformLayout();
+            groupBoxOrderDetails.ResumeLayout(false);
+            groupBoxOrderDetails.PerformLayout();
+            ResumeLayout(false);
         }
 
 

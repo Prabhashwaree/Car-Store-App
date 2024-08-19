@@ -31,53 +31,54 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.dataGridViewCustomers = new System.Windows.Forms.DataGridView();
-            this.groupBoxSearch = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomers)).BeginInit();
-            this.groupBoxSearch.SuspendLayout();
-            this.SuspendLayout();
+            txtSearch = new TextBox();
+            dataGridViewCustomers = new DataGridView();
+            groupBoxSearch = new GroupBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCustomers).BeginInit();
+            groupBoxSearch.SuspendLayout();
+            SuspendLayout();
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(21, 21);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(346, 22);
-            this.txtSearch.TabIndex = 0;
-            this.txtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
+            txtSearch.Location = new Point(21, 21);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(290, 23);
+            txtSearch.TabIndex = 0;
+            txtSearch.TextChanged += TxtSearch_TextChanged;
             // 
             // dataGridViewCustomers
             // 
-            this.dataGridViewCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustomers.Location = new System.Drawing.Point(20, 82);
-            this.dataGridViewCustomers.Name = "dataGridViewCustomers";
-            this.dataGridViewCustomers.RowHeadersWidth = 51;
-            this.dataGridViewCustomers.RowTemplate.Height = 24;
-            this.dataGridViewCustomers.Size = new System.Drawing.Size(800, 378);
-            this.dataGridViewCustomers.TabIndex = 1;
-            this.dataGridViewCustomers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewCustomers_CellClick);
+            dataGridViewCustomers.BackgroundColor = Color.Azure;
+            dataGridViewCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCustomers.Location = new Point(20, 93);
+            dataGridViewCustomers.Name = "dataGridViewCustomers";
+            dataGridViewCustomers.RowHeadersWidth = 51;
+            dataGridViewCustomers.RowTemplate.Height = 24;
+            dataGridViewCustomers.Size = new Size(845, 367);
+            dataGridViewCustomers.TabIndex = 1;
+            dataGridViewCustomers.CellClick += DataGridViewCustomers_CellClick;
             // 
             // groupBoxSearch
             // 
-            this.groupBoxSearch.Controls.Add(this.txtSearch);
-            this.groupBoxSearch.Location = new System.Drawing.Point(20, 10);
-            this.groupBoxSearch.Name = "groupBoxSearch";
-            this.groupBoxSearch.Size = new System.Drawing.Size(386, 62);
-            this.groupBoxSearch.TabIndex = 20;
-            this.groupBoxSearch.TabStop = false;
-            this.groupBoxSearch.Text = "Search";
+            groupBoxSearch.Controls.Add(txtSearch);
+            groupBoxSearch.Location = new Point(536, 10);
+            groupBoxSearch.Name = "groupBoxSearch";
+            groupBoxSearch.Size = new Size(329, 62);
+            groupBoxSearch.TabIndex = 20;
+            groupBoxSearch.TabStop = false;
+            groupBoxSearch.Text = "Search";
             // 
             // CustomerManagementControl
             // 
-            this.Controls.Add(this.groupBoxSearch);
-            this.Controls.Add(this.dataGridViewCustomers);
-            this.Name = "CustomerManagementControl";
-            this.Size = new System.Drawing.Size(850, 500);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomers)).EndInit();
-            this.groupBoxSearch.ResumeLayout(false);
-            this.groupBoxSearch.PerformLayout();
-            this.ResumeLayout(false);
-
+            BackgroundImage = CarStoreApp1.Properties.Resources.pngtree_grunge_wall_texture_scratched_off_white_background_image_77414710;
+            Controls.Add(groupBoxSearch);
+            Controls.Add(dataGridViewCustomers);
+            Name = "CustomerManagementControl";
+            Size = new Size(891, 500);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCustomers).EndInit();
+            groupBoxSearch.ResumeLayout(false);
+            groupBoxSearch.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

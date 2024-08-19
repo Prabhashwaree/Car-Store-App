@@ -28,122 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblCustomersCount = new System.Windows.Forms.Label();
-            this.lblCarsCount = new System.Windows.Forms.Label();
-            this.lblCarPartsCount = new System.Windows.Forms.Label();
-            this.lblOrdersCount = new System.Windows.Forms.Label();
-            this.groupBoxCustomers = new System.Windows.Forms.GroupBox();
-            this.groupBoxCars = new System.Windows.Forms.GroupBox();
-            this.groupBoxCarParts = new System.Windows.Forms.GroupBox();
-            this.groupBoxOrders = new System.Windows.Forms.GroupBox();
-            this.groupBoxCustomers.SuspendLayout();
-            this.groupBoxCars.SuspendLayout();
-            this.groupBoxCarParts.SuspendLayout();
-            this.groupBoxOrders.SuspendLayout();
-            this.SuspendLayout();
+            lblCustomersCount = new Label();
+            lblCarsCount = new Label();
+            lblCarPartsCount = new Label();
+            lblOrdersCount = new Label();
+            groupBoxCustomers = new GroupBox();
+            groupBoxCars = new GroupBox();
+            groupBoxCarParts = new GroupBox();
+            groupBoxOrders = new GroupBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            groupBoxCustomers.SuspendLayout();
+            groupBoxCars.SuspendLayout();
+            groupBoxCarParts.SuspendLayout();
+            groupBoxOrders.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            SuspendLayout();
             // 
             // lblCustomersCount
             // 
-            this.lblCustomersCount.AutoSize = true;
-            this.lblCustomersCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCustomersCount.Location = new System.Drawing.Point(18, 44);
-            this.lblCustomersCount.Name = "lblCustomersCount";
-            this.lblCustomersCount.Size = new System.Drawing.Size(184, 20);
-            this.lblCustomersCount.TabIndex = 0;
-            this.lblCustomersCount.Text = "Number of Customers: ";
+            lblCustomersCount.AutoSize = true;
+            lblCustomersCount.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            lblCustomersCount.Location = new Point(18, 44);
+            lblCustomersCount.Name = "lblCustomersCount";
+            lblCustomersCount.Size = new Size(163, 16);
+            lblCustomersCount.TabIndex = 0;
+            lblCustomersCount.Text = "Number of Customers: ";
             // 
             // lblCarsCount
             // 
-            this.lblCarsCount.AutoSize = true;
-            this.lblCarsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCarsCount.Location = new System.Drawing.Point(19, 44);
-            this.lblCarsCount.Name = "lblCarsCount";
-            this.lblCarsCount.Size = new System.Drawing.Size(138, 20);
-            this.lblCarsCount.TabIndex = 1;
-            this.lblCarsCount.Text = "Number of Cars: ";
+            lblCarsCount.AutoSize = true;
+            lblCarsCount.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            lblCarsCount.Location = new Point(19, 44);
+            lblCarsCount.Name = "lblCarsCount";
+            lblCarsCount.Size = new Size(122, 16);
+            lblCarsCount.TabIndex = 1;
+            lblCarsCount.Text = "Number of Cars: ";
             // 
             // lblCarPartsCount
             // 
-            this.lblCarPartsCount.AutoSize = true;
-            this.lblCarPartsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCarPartsCount.Location = new System.Drawing.Point(18, 49);
-            this.lblCarPartsCount.Name = "lblCarPartsCount";
-            this.lblCarPartsCount.Size = new System.Drawing.Size(174, 20);
-            this.lblCarPartsCount.TabIndex = 2;
-            this.lblCarPartsCount.Text = "Number of Car Parts: ";
+            lblCarPartsCount.AutoSize = true;
+            lblCarPartsCount.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            lblCarPartsCount.Location = new Point(18, 49);
+            lblCarPartsCount.Name = "lblCarPartsCount";
+            lblCarPartsCount.Size = new Size(154, 16);
+            lblCarPartsCount.TabIndex = 2;
+            lblCarPartsCount.Text = "Number of Car Parts: ";
             // 
             // lblOrdersCount
             // 
-            this.lblOrdersCount.AutoSize = true;
-            this.lblOrdersCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblOrdersCount.Location = new System.Drawing.Point(19, 49);
-            this.lblOrdersCount.Name = "lblOrdersCount";
-            this.lblOrdersCount.Size = new System.Drawing.Size(154, 20);
-            this.lblOrdersCount.TabIndex = 3;
-            this.lblOrdersCount.Text = "Number of Orders: ";
+            lblOrdersCount.AutoSize = true;
+            lblOrdersCount.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            lblOrdersCount.Location = new Point(19, 49);
+            lblOrdersCount.Name = "lblOrdersCount";
+            lblOrdersCount.Size = new Size(137, 16);
+            lblOrdersCount.TabIndex = 3;
+            lblOrdersCount.Text = "Number of Orders: ";
             // 
             // groupBoxCustomers
             // 
-            this.groupBoxCustomers.Controls.Add(this.lblCustomersCount);
-            this.groupBoxCustomers.Location = new System.Drawing.Point(41, 43);
-            this.groupBoxCustomers.Name = "groupBoxCustomers";
-            this.groupBoxCustomers.Size = new System.Drawing.Size(389, 100);
-            this.groupBoxCustomers.TabIndex = 4;
-            this.groupBoxCustomers.TabStop = false;
-            this.groupBoxCustomers.Text = "Total Customers";
+            groupBoxCustomers.Controls.Add(lblCustomersCount);
+            groupBoxCustomers.Location = new Point(41, 34);
+            groupBoxCustomers.Name = "groupBoxCustomers";
+            groupBoxCustomers.Size = new Size(389, 100);
+            groupBoxCustomers.TabIndex = 4;
+            groupBoxCustomers.TabStop = false;
+            groupBoxCustomers.Text = "Total Customers";
             // 
             // groupBoxCars
             // 
-            this.groupBoxCars.Controls.Add(this.lblCarsCount);
-            this.groupBoxCars.Location = new System.Drawing.Point(470, 43);
-            this.groupBoxCars.Name = "groupBoxCars";
-            this.groupBoxCars.Size = new System.Drawing.Size(389, 100);
-            this.groupBoxCars.TabIndex = 5;
-            this.groupBoxCars.TabStop = false;
-            this.groupBoxCars.Text = "Total Cars";
+            groupBoxCars.Controls.Add(lblCarsCount);
+            groupBoxCars.Location = new Point(470, 34);
+            groupBoxCars.Name = "groupBoxCars";
+            groupBoxCars.Size = new Size(389, 100);
+            groupBoxCars.TabIndex = 5;
+            groupBoxCars.TabStop = false;
+            groupBoxCars.Text = "Total Cars";
             // 
             // groupBoxCarParts
             // 
-            this.groupBoxCarParts.Controls.Add(this.lblCarPartsCount);
-            this.groupBoxCarParts.Location = new System.Drawing.Point(41, 178);
-            this.groupBoxCarParts.Name = "groupBoxCarParts";
-            this.groupBoxCarParts.Size = new System.Drawing.Size(389, 100);
-            this.groupBoxCarParts.TabIndex = 6;
-            this.groupBoxCarParts.TabStop = false;
-            this.groupBoxCarParts.Text = "Total Car Parts";
+            groupBoxCarParts.Controls.Add(lblCarPartsCount);
+            groupBoxCarParts.Location = new Point(41, 316);
+            groupBoxCarParts.Name = "groupBoxCarParts";
+            groupBoxCarParts.Size = new Size(389, 100);
+            groupBoxCarParts.TabIndex = 6;
+            groupBoxCarParts.TabStop = false;
+            groupBoxCarParts.Text = "Total Car Parts";
             // 
             // groupBoxOrders
             // 
-            this.groupBoxOrders.Controls.Add(this.lblOrdersCount);
-            this.groupBoxOrders.Location = new System.Drawing.Point(470, 178);
-            this.groupBoxOrders.Name = "groupBoxOrders";
-            this.groupBoxOrders.Size = new System.Drawing.Size(389, 100);
-            this.groupBoxOrders.TabIndex = 7;
-            this.groupBoxOrders.TabStop = false;
-            this.groupBoxOrders.Text = "Total Orders";
+            groupBoxOrders.Controls.Add(lblOrdersCount);
+            groupBoxOrders.Location = new Point(470, 316);
+            groupBoxOrders.Name = "groupBoxOrders";
+            groupBoxOrders.Size = new Size(389, 100);
+            groupBoxOrders.TabIndex = 7;
+            groupBoxOrders.TabStop = false;
+            groupBoxOrders.Text = "Total Orders";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = CarStoreApp1.Properties.Resources.istockphoto_1402948381_612x6121;
+            pictureBox1.Location = new Point(41, 108);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(389, 184);
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = CarStoreApp1.Properties.Resources.istockphoto_907671128_612x6122;
+            pictureBox2.Location = new Point(470, 108);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(389, 184);
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = CarStoreApp1.Properties.Resources.istockphoto_1212230930_612x6121;
+            pictureBox3.Location = new Point(41, 395);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(389, 177);
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = CarStoreApp1.Properties.Resources._5ae05c0b06935fdfbe40e79cd5d86db51;
+            pictureBox4.Location = new Point(470, 395);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(389, 177);
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
             // 
             // DashboardControl
             // 
-            this.Controls.Add(this.groupBoxOrders);
-            this.Controls.Add(this.groupBoxCarParts);
-            this.Controls.Add(this.groupBoxCars);
-            this.Controls.Add(this.groupBoxCustomers);
-            this.Name = "DashboardControl";
-            this.Size = new System.Drawing.Size(901, 526);
-            this.groupBoxCustomers.ResumeLayout(false);
-            this.groupBoxCustomers.PerformLayout();
-            this.groupBoxCars.ResumeLayout(false);
-            this.groupBoxCars.PerformLayout();
-            this.groupBoxCarParts.ResumeLayout(false);
-            this.groupBoxCarParts.PerformLayout();
-            this.groupBoxOrders.ResumeLayout(false);
-            this.groupBoxOrders.PerformLayout();
-            this.ResumeLayout(false);
-
+            BackgroundImage = CarStoreApp1.Properties.Resources.pngtree_grunge_wall_texture_scratched_off_white_background_image_77414710;
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBoxOrders);
+            Controls.Add(groupBoxCarParts);
+            Controls.Add(groupBoxCars);
+            Controls.Add(groupBoxCustomers);
+            Name = "DashboardControl";
+            Size = new Size(901, 644);
+            groupBoxCustomers.ResumeLayout(false);
+            groupBoxCustomers.PerformLayout();
+            groupBoxCars.ResumeLayout(false);
+            groupBoxCars.PerformLayout();
+            groupBoxCarParts.ResumeLayout(false);
+            groupBoxCarParts.PerformLayout();
+            groupBoxOrders.ResumeLayout(false);
+            groupBoxOrders.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
-     
+
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

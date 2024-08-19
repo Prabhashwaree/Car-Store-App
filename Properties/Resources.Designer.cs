@@ -73,6 +73,16 @@ namespace CarStoreApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _360_F_269619566_KhdApj2KIdQy0rYeXn0HFr13FCbwUM5e1 {
+            get {
+                object obj = ResourceManager.GetObject("360_F_269619566_KhdApj2KIdQy0rYeXn0HFr13FCbwUM5e1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _360_F_294688686_eBbqaZUVeRr8BoCDuhxsWl4fjwV51FcV {
             get {
                 object obj = ResourceManager.GetObject("360_F_294688686_eBbqaZUVeRr8BoCDuhxsWl4fjwV51FcV", resourceCulture);
@@ -123,6 +133,26 @@ namespace CarStoreApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5ae05c0b06935fdfbe40e79cd5d86db51 {
+            get {
+                object obj = ResourceManager.GetObject("5ae05c0b06935fdfbe40e79cd5d86db51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aston_martin_dbc_concept_cars_picturesque_car_pictures_desktop_wallpaper_preview {
+            get {
+                object obj = ResourceManager.GetObject("aston-martin-dbc-concept-cars-picturesque-car-pictures-desktop-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap auto_parts_online {
             get {
                 object obj = ResourceManager.GetObject("auto-parts-online", resourceCulture);
@@ -143,6 +173,16 @@ namespace CarStoreApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gettyimages_1455365261 {
+            get {
+                object obj = ResourceManager.GetObject("gettyimages-1455365261", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1212230930_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1212230930-612x612", resourceCulture);
@@ -153,9 +193,39 @@ namespace CarStoreApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1212230930_612x6121 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1212230930-612x6121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1273682054_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1273682054-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1402948381_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1402948381-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1402948381_612x6121 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1402948381-612x6121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +246,16 @@ namespace CarStoreApp1.Properties {
         internal static System.Drawing.Bitmap istockphoto_907671128_612x6121 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-907671128-612x6121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_907671128_612x6122 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-907671128-612x6122", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

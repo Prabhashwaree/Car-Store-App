@@ -28,323 +28,341 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblOrderIDLabel = new System.Windows.Forms.Label();
-            this.lblOrderID = new System.Windows.Forms.Label();
-            this.lblOrderDateLabel = new System.Windows.Forms.Label();
-            this.lblOrderDate = new System.Windows.Forms.Label();
-            this.lblTotalAmountLabel = new System.Windows.Forms.Label();
-            this.lblTotalAmount = new System.Windows.Forms.Label();
-            this.groupBoxOrderInfo = new System.Windows.Forms.GroupBox();
-            this.lblCustomerIDLabel = new System.Windows.Forms.Label();
-            this.lblCustomerID = new System.Windows.Forms.Label();
-            this.lblFirstNameLabel = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.lblLastNameLabel = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblEmailLabel = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPhoneLabel = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.groupBoxCustomerInfo = new System.Windows.Forms.GroupBox();
-            this.lblCarIDLabel = new System.Windows.Forms.Label();
-            this.lblCarID = new System.Windows.Forms.Label();
-            this.lblModelLabel = new System.Windows.Forms.Label();
-            this.lblModel = new System.Windows.Forms.Label();
-            this.lblManufacturerLabel = new System.Windows.Forms.Label();
-            this.lblManufacturer = new System.Windows.Forms.Label();
-            this.lblYearLabel = new System.Windows.Forms.Label();
-            this.lblYear = new System.Windows.Forms.Label();
-            this.groupBoxCarInfo = new System.Windows.Forms.GroupBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.groupBoxOrderInfo.SuspendLayout();
-            this.groupBoxCustomerInfo.SuspendLayout();
-            this.groupBoxCarInfo.SuspendLayout();
-            this.SuspendLayout();
+            lblOrderIDLabel = new Label();
+            lblOrderID = new Label();
+            lblOrderDateLabel = new Label();
+            lblOrderDate = new Label();
+            lblTotalAmountLabel = new Label();
+            lblTotalAmount = new Label();
+            groupBoxOrderInfo = new GroupBox();
+            lblCustomerIDLabel = new Label();
+            lblCustomerID = new Label();
+            lblFirstNameLabel = new Label();
+            lblFirstName = new Label();
+            lblLastNameLabel = new Label();
+            lblLastName = new Label();
+            lblEmailLabel = new Label();
+            lblEmail = new Label();
+            lblPhoneLabel = new Label();
+            lblPhone = new Label();
+            groupBoxCustomerInfo = new GroupBox();
+            lblCarIDLabel = new Label();
+            lblCarID = new Label();
+            lblModelLabel = new Label();
+            lblModel = new Label();
+            lblManufacturerLabel = new Label();
+            lblManufacturer = new Label();
+            lblYearLabel = new Label();
+            lblYear = new Label();
+            groupBoxCarInfo = new GroupBox();
+            btnClose = new Button();
+            groupBoxOrderInfo.SuspendLayout();
+            groupBoxCustomerInfo.SuspendLayout();
+            groupBoxCarInfo.SuspendLayout();
+            SuspendLayout();
             // 
             // lblOrderIDLabel
             // 
-            this.lblOrderIDLabel.AutoSize = true;
-            this.lblOrderIDLabel.Location = new System.Drawing.Point(20, 30);
-            this.lblOrderIDLabel.Name = "lblOrderIDLabel";
-            this.lblOrderIDLabel.Size = new System.Drawing.Size(60, 16);
-            this.lblOrderIDLabel.TabIndex = 0;
-            this.lblOrderIDLabel.Text = "Order ID:";
+            lblOrderIDLabel.AutoSize = true;
+            lblOrderIDLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblOrderIDLabel.Location = new Point(18, 28);
+            lblOrderIDLabel.Name = "lblOrderIDLabel";
+            lblOrderIDLabel.Size = new Size(59, 15);
+            lblOrderIDLabel.TabIndex = 0;
+            lblOrderIDLabel.Text = "Order ID:";
             // 
             // lblOrderID
             // 
-            this.lblOrderID.AutoSize = true;
-            this.lblOrderID.Location = new System.Drawing.Point(120, 30);
-            this.lblOrderID.Name = "lblOrderID";
-            this.lblOrderID.Size = new System.Drawing.Size(0, 16);
-            this.lblOrderID.TabIndex = 1;
+            lblOrderID.AutoSize = true;
+            lblOrderID.Location = new Point(105, 28);
+            lblOrderID.Name = "lblOrderID";
+            lblOrderID.Size = new Size(0, 15);
+            lblOrderID.TabIndex = 1;
             // 
             // lblOrderDateLabel
             // 
-            this.lblOrderDateLabel.AutoSize = true;
-            this.lblOrderDateLabel.Location = new System.Drawing.Point(20, 60);
-            this.lblOrderDateLabel.Name = "lblOrderDateLabel";
-            this.lblOrderDateLabel.Size = new System.Drawing.Size(76, 16);
-            this.lblOrderDateLabel.TabIndex = 2;
-            this.lblOrderDateLabel.Text = "Order Date:";
+            lblOrderDateLabel.AutoSize = true;
+            lblOrderDateLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblOrderDateLabel.Location = new Point(18, 56);
+            lblOrderDateLabel.Name = "lblOrderDateLabel";
+            lblOrderDateLabel.Size = new Size(73, 15);
+            lblOrderDateLabel.TabIndex = 2;
+            lblOrderDateLabel.Text = "Order Date:";
             // 
             // lblOrderDate
             // 
-            this.lblOrderDate.AutoSize = true;
-            this.lblOrderDate.Location = new System.Drawing.Point(120, 60);
-            this.lblOrderDate.Name = "lblOrderDate";
-            this.lblOrderDate.Size = new System.Drawing.Size(0, 16);
-            this.lblOrderDate.TabIndex = 3;
+            lblOrderDate.AutoSize = true;
+            lblOrderDate.Location = new Point(105, 56);
+            lblOrderDate.Name = "lblOrderDate";
+            lblOrderDate.Size = new Size(0, 15);
+            lblOrderDate.TabIndex = 3;
             // 
             // lblTotalAmountLabel
             // 
-            this.lblTotalAmountLabel.AutoSize = true;
-            this.lblTotalAmountLabel.Location = new System.Drawing.Point(20, 90);
-            this.lblTotalAmountLabel.Name = "lblTotalAmountLabel";
-            this.lblTotalAmountLabel.Size = new System.Drawing.Size(89, 16);
-            this.lblTotalAmountLabel.TabIndex = 4;
-            this.lblTotalAmountLabel.Text = "Total Amount:";
+            lblTotalAmountLabel.AutoSize = true;
+            lblTotalAmountLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblTotalAmountLabel.Location = new Point(18, 84);
+            lblTotalAmountLabel.Name = "lblTotalAmountLabel";
+            lblTotalAmountLabel.Size = new Size(85, 15);
+            lblTotalAmountLabel.TabIndex = 4;
+            lblTotalAmountLabel.Text = "Total Amount:";
             // 
             // lblTotalAmount
             // 
-            this.lblTotalAmount.AutoSize = true;
-            this.lblTotalAmount.Location = new System.Drawing.Point(120, 90);
-            this.lblTotalAmount.Name = "lblTotalAmount";
-            this.lblTotalAmount.Size = new System.Drawing.Size(0, 16);
-            this.lblTotalAmount.TabIndex = 5;
+            lblTotalAmount.AutoSize = true;
+            lblTotalAmount.Location = new Point(105, 84);
+            lblTotalAmount.Name = "lblTotalAmount";
+            lblTotalAmount.Size = new Size(0, 15);
+            lblTotalAmount.TabIndex = 5;
             // 
             // groupBoxOrderInfo
             // 
-            this.groupBoxOrderInfo.Controls.Add(this.lblTotalAmount);
-            this.groupBoxOrderInfo.Controls.Add(this.lblTotalAmountLabel);
-            this.groupBoxOrderInfo.Controls.Add(this.lblOrderDate);
-            this.groupBoxOrderInfo.Controls.Add(this.lblOrderDateLabel);
-            this.groupBoxOrderInfo.Controls.Add(this.lblOrderID);
-            this.groupBoxOrderInfo.Controls.Add(this.lblOrderIDLabel);
-            this.groupBoxOrderInfo.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxOrderInfo.Name = "groupBoxOrderInfo";
-            this.groupBoxOrderInfo.Size = new System.Drawing.Size(442, 120);
-            this.groupBoxOrderInfo.TabIndex = 0;
-            this.groupBoxOrderInfo.TabStop = false;
-            this.groupBoxOrderInfo.Text = "Order Information";
+            groupBoxOrderInfo.BackColor = Color.Azure;
+            groupBoxOrderInfo.Controls.Add(lblTotalAmount);
+            groupBoxOrderInfo.Controls.Add(lblTotalAmountLabel);
+            groupBoxOrderInfo.Controls.Add(lblOrderDate);
+            groupBoxOrderInfo.Controls.Add(lblOrderDateLabel);
+            groupBoxOrderInfo.Controls.Add(lblOrderID);
+            groupBoxOrderInfo.Controls.Add(lblOrderIDLabel);
+            groupBoxOrderInfo.Location = new Point(10, 11);
+            groupBoxOrderInfo.Name = "groupBoxOrderInfo";
+            groupBoxOrderInfo.Size = new Size(387, 112);
+            groupBoxOrderInfo.TabIndex = 0;
+            groupBoxOrderInfo.TabStop = false;
+            groupBoxOrderInfo.Text = "Order Information";
             // 
             // lblCustomerIDLabel
             // 
-            this.lblCustomerIDLabel.AutoSize = true;
-            this.lblCustomerIDLabel.Location = new System.Drawing.Point(20, 30);
-            this.lblCustomerIDLabel.Name = "lblCustomerIDLabel";
-            this.lblCustomerIDLabel.Size = new System.Drawing.Size(83, 16);
-            this.lblCustomerIDLabel.TabIndex = 0;
-            this.lblCustomerIDLabel.Text = "Customer ID:";
+            lblCustomerIDLabel.AutoSize = true;
+            lblCustomerIDLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblCustomerIDLabel.Location = new Point(18, 28);
+            lblCustomerIDLabel.Name = "lblCustomerIDLabel";
+            lblCustomerIDLabel.Size = new Size(80, 15);
+            lblCustomerIDLabel.TabIndex = 0;
+            lblCustomerIDLabel.Text = "Customer ID:";
             // 
             // lblCustomerID
             // 
-            this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Location = new System.Drawing.Point(120, 30);
-            this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(0, 16);
-            this.lblCustomerID.TabIndex = 1;
+            lblCustomerID.AutoSize = true;
+            lblCustomerID.Location = new Point(105, 28);
+            lblCustomerID.Name = "lblCustomerID";
+            lblCustomerID.Size = new Size(0, 15);
+            lblCustomerID.TabIndex = 1;
             // 
             // lblFirstNameLabel
             // 
-            this.lblFirstNameLabel.AutoSize = true;
-            this.lblFirstNameLabel.Location = new System.Drawing.Point(20, 60);
-            this.lblFirstNameLabel.Name = "lblFirstNameLabel";
-            this.lblFirstNameLabel.Size = new System.Drawing.Size(75, 16);
-            this.lblFirstNameLabel.TabIndex = 2;
-            this.lblFirstNameLabel.Text = "First Name:";
+            lblFirstNameLabel.AutoSize = true;
+            lblFirstNameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblFirstNameLabel.Location = new Point(18, 56);
+            lblFirstNameLabel.Name = "lblFirstNameLabel";
+            lblFirstNameLabel.Size = new Size(70, 15);
+            lblFirstNameLabel.TabIndex = 2;
+            lblFirstNameLabel.Text = "First Name:";
             // 
             // lblFirstName
             // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(120, 60);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(0, 16);
-            this.lblFirstName.TabIndex = 3;
+            lblFirstName.AutoSize = true;
+            lblFirstName.Location = new Point(105, 56);
+            lblFirstName.Name = "lblFirstName";
+            lblFirstName.Size = new Size(0, 15);
+            lblFirstName.TabIndex = 3;
             // 
             // lblLastNameLabel
             // 
-            this.lblLastNameLabel.AutoSize = true;
-            this.lblLastNameLabel.Location = new System.Drawing.Point(20, 90);
-            this.lblLastNameLabel.Name = "lblLastNameLabel";
-            this.lblLastNameLabel.Size = new System.Drawing.Size(75, 16);
-            this.lblLastNameLabel.TabIndex = 4;
-            this.lblLastNameLabel.Text = "Last Name:";
+            lblLastNameLabel.AutoSize = true;
+            lblLastNameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblLastNameLabel.Location = new Point(18, 84);
+            lblLastNameLabel.Name = "lblLastNameLabel";
+            lblLastNameLabel.Size = new Size(68, 15);
+            lblLastNameLabel.TabIndex = 4;
+            lblLastNameLabel.Text = "Last Name:";
             // 
             // lblLastName
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(120, 90);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(0, 16);
-            this.lblLastName.TabIndex = 5;
+            lblLastName.AutoSize = true;
+            lblLastName.Location = new Point(105, 84);
+            lblLastName.Name = "lblLastName";
+            lblLastName.Size = new Size(0, 15);
+            lblLastName.TabIndex = 5;
             // 
             // lblEmailLabel
             // 
-            this.lblEmailLabel.AutoSize = true;
-            this.lblEmailLabel.Location = new System.Drawing.Point(20, 120);
-            this.lblEmailLabel.Name = "lblEmailLabel";
-            this.lblEmailLabel.Size = new System.Drawing.Size(44, 16);
-            this.lblEmailLabel.TabIndex = 6;
-            this.lblEmailLabel.Text = "Email:";
+            lblEmailLabel.AutoSize = true;
+            lblEmailLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblEmailLabel.Location = new Point(282, 28);
+            lblEmailLabel.Name = "lblEmailLabel";
+            lblEmailLabel.Size = new Size(39, 15);
+            lblEmailLabel.TabIndex = 6;
+            lblEmailLabel.Text = "Email:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(120, 120);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(0, 16);
-            this.lblEmail.TabIndex = 7;
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(336, 28);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(0, 15);
+            lblEmail.TabIndex = 7;
             // 
             // lblPhoneLabel
             // 
-            this.lblPhoneLabel.AutoSize = true;
-            this.lblPhoneLabel.Location = new System.Drawing.Point(20, 150);
-            this.lblPhoneLabel.Name = "lblPhoneLabel";
-            this.lblPhoneLabel.Size = new System.Drawing.Size(49, 16);
-            this.lblPhoneLabel.TabIndex = 8;
-            this.lblPhoneLabel.Text = "Phone:";
+            lblPhoneLabel.AutoSize = true;
+            lblPhoneLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblPhoneLabel.Location = new Point(282, 57);
+            lblPhoneLabel.Name = "lblPhoneLabel";
+            lblPhoneLabel.Size = new Size(45, 15);
+            lblPhoneLabel.TabIndex = 8;
+            lblPhoneLabel.Text = "Phone:";
             // 
             // lblPhone
             // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(120, 150);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(0, 16);
-            this.lblPhone.TabIndex = 9;
+            lblPhone.AutoSize = true;
+            lblPhone.Location = new Point(336, 57);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(0, 15);
+            lblPhone.TabIndex = 9;
             // 
             // groupBoxCustomerInfo
             // 
-            this.groupBoxCustomerInfo.Controls.Add(this.lblPhone);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblPhoneLabel);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblEmail);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblEmailLabel);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblLastName);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblLastNameLabel);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblFirstName);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblFirstNameLabel);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblCustomerID);
-            this.groupBoxCustomerInfo.Controls.Add(this.lblCustomerIDLabel);
-            this.groupBoxCustomerInfo.Location = new System.Drawing.Point(12, 140);
-            this.groupBoxCustomerInfo.Name = "groupBoxCustomerInfo";
-            this.groupBoxCustomerInfo.Size = new System.Drawing.Size(442, 200);
-            this.groupBoxCustomerInfo.TabIndex = 1;
-            this.groupBoxCustomerInfo.TabStop = false;
-            this.groupBoxCustomerInfo.Text = "Customer Information";
+            groupBoxCustomerInfo.BackColor = Color.Azure;
+            groupBoxCustomerInfo.Controls.Add(lblPhone);
+            groupBoxCustomerInfo.Controls.Add(lblPhoneLabel);
+            groupBoxCustomerInfo.Controls.Add(lblEmail);
+            groupBoxCustomerInfo.Controls.Add(lblEmailLabel);
+            groupBoxCustomerInfo.Controls.Add(lblLastName);
+            groupBoxCustomerInfo.Controls.Add(lblLastNameLabel);
+            groupBoxCustomerInfo.Controls.Add(lblFirstName);
+            groupBoxCustomerInfo.Controls.Add(lblFirstNameLabel);
+            groupBoxCustomerInfo.Controls.Add(lblCustomerID);
+            groupBoxCustomerInfo.Controls.Add(lblCustomerIDLabel);
+            groupBoxCustomerInfo.Location = new Point(413, 11);
+            groupBoxCustomerInfo.Name = "groupBoxCustomerInfo";
+            groupBoxCustomerInfo.Size = new Size(504, 112);
+            groupBoxCustomerInfo.TabIndex = 1;
+            groupBoxCustomerInfo.TabStop = false;
+            groupBoxCustomerInfo.Text = "Customer Information";
             // 
             // lblCarIDLabel
             // 
-            this.lblCarIDLabel.AutoSize = true;
-            this.lblCarIDLabel.Location = new System.Drawing.Point(20, 30);
-            this.lblCarIDLabel.Name = "lblCarIDLabel";
-            this.lblCarIDLabel.Size = new System.Drawing.Size(47, 16);
-            this.lblCarIDLabel.TabIndex = 0;
-            this.lblCarIDLabel.Text = "Car ID:";
+            lblCarIDLabel.AutoSize = true;
+            lblCarIDLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblCarIDLabel.Location = new Point(18, 28);
+            lblCarIDLabel.Name = "lblCarIDLabel";
+            lblCarIDLabel.Size = new Size(44, 15);
+            lblCarIDLabel.TabIndex = 0;
+            lblCarIDLabel.Text = "Car ID:";
             // 
             // lblCarID
             // 
-            this.lblCarID.AutoSize = true;
-            this.lblCarID.Location = new System.Drawing.Point(120, 30);
-            this.lblCarID.Name = "lblCarID";
-            this.lblCarID.Size = new System.Drawing.Size(0, 16);
-            this.lblCarID.TabIndex = 1;
+            lblCarID.AutoSize = true;
+            lblCarID.Location = new Point(105, 28);
+            lblCarID.Name = "lblCarID";
+            lblCarID.Size = new Size(0, 15);
+            lblCarID.TabIndex = 1;
             // 
             // lblModelLabel
             // 
-            this.lblModelLabel.AutoSize = true;
-            this.lblModelLabel.Location = new System.Drawing.Point(20, 60);
-            this.lblModelLabel.Name = "lblModelLabel";
-            this.lblModelLabel.Size = new System.Drawing.Size(48, 16);
-            this.lblModelLabel.TabIndex = 2;
-            this.lblModelLabel.Text = "Model:";
+            lblModelLabel.AutoSize = true;
+            lblModelLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblModelLabel.Location = new Point(18, 56);
+            lblModelLabel.Name = "lblModelLabel";
+            lblModelLabel.Size = new Size(45, 15);
+            lblModelLabel.TabIndex = 2;
+            lblModelLabel.Text = "Model:";
             // 
             // lblModel
             // 
-            this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(120, 60);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(0, 16);
-            this.lblModel.TabIndex = 3;
+            lblModel.AutoSize = true;
+            lblModel.Location = new Point(105, 56);
+            lblModel.Name = "lblModel";
+            lblModel.Size = new Size(0, 15);
+            lblModel.TabIndex = 3;
             // 
             // lblManufacturerLabel
             // 
-            this.lblManufacturerLabel.AutoSize = true;
-            this.lblManufacturerLabel.Location = new System.Drawing.Point(20, 90);
-            this.lblManufacturerLabel.Name = "lblManufacturerLabel";
-            this.lblManufacturerLabel.Size = new System.Drawing.Size(87, 16);
-            this.lblManufacturerLabel.TabIndex = 4;
-            this.lblManufacturerLabel.Text = "Manufacturer:";
+            lblManufacturerLabel.AutoSize = true;
+            lblManufacturerLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblManufacturerLabel.Location = new Point(18, 84);
+            lblManufacturerLabel.Name = "lblManufacturerLabel";
+            lblManufacturerLabel.Size = new Size(87, 15);
+            lblManufacturerLabel.TabIndex = 4;
+            lblManufacturerLabel.Text = "Manufacturer:";
             // 
             // lblManufacturer
             // 
-            this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Location = new System.Drawing.Point(120, 90);
-            this.lblManufacturer.Name = "lblManufacturer";
-            this.lblManufacturer.Size = new System.Drawing.Size(0, 16);
-            this.lblManufacturer.TabIndex = 5;
+            lblManufacturer.AutoSize = true;
+            lblManufacturer.Location = new Point(105, 84);
+            lblManufacturer.Name = "lblManufacturer";
+            lblManufacturer.Size = new Size(0, 15);
+            lblManufacturer.TabIndex = 5;
             // 
             // lblYearLabel
             // 
-            this.lblYearLabel.AutoSize = true;
-            this.lblYearLabel.Location = new System.Drawing.Point(20, 120);
-            this.lblYearLabel.Name = "lblYearLabel";
-            this.lblYearLabel.Size = new System.Drawing.Size(39, 16);
-            this.lblYearLabel.TabIndex = 6;
-            this.lblYearLabel.Text = "Year:";
+            lblYearLabel.AutoSize = true;
+            lblYearLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblYearLabel.Location = new Point(216, 28);
+            lblYearLabel.Name = "lblYearLabel";
+            lblYearLabel.Size = new Size(34, 15);
+            lblYearLabel.TabIndex = 6;
+            lblYearLabel.Text = "Year:";
             // 
             // lblYear
             // 
-            this.lblYear.AutoSize = true;
-            this.lblYear.Location = new System.Drawing.Point(120, 120);
-            this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(0, 16);
-            this.lblYear.TabIndex = 7;
+            lblYear.AutoSize = true;
+            lblYear.Location = new Point(258, 28);
+            lblYear.Name = "lblYear";
+            lblYear.Size = new Size(0, 15);
+            lblYear.TabIndex = 7;
             // 
             // groupBoxCarInfo
             // 
-            this.groupBoxCarInfo.Controls.Add(this.lblYear);
-            this.groupBoxCarInfo.Controls.Add(this.lblYearLabel);
-            this.groupBoxCarInfo.Controls.Add(this.lblManufacturer);
-            this.groupBoxCarInfo.Controls.Add(this.lblManufacturerLabel);
-            this.groupBoxCarInfo.Controls.Add(this.lblModel);
-            this.groupBoxCarInfo.Controls.Add(this.lblModelLabel);
-            this.groupBoxCarInfo.Controls.Add(this.lblCarID);
-            this.groupBoxCarInfo.Controls.Add(this.lblCarIDLabel);
-            this.groupBoxCarInfo.Location = new System.Drawing.Point(12, 350);
-            this.groupBoxCarInfo.Name = "groupBoxCarInfo";
-            this.groupBoxCarInfo.Size = new System.Drawing.Size(442, 160);
-            this.groupBoxCarInfo.TabIndex = 2;
-            this.groupBoxCarInfo.TabStop = false;
-            this.groupBoxCarInfo.Text = "Car Information";
+            groupBoxCarInfo.BackColor = Color.Azure;
+            groupBoxCarInfo.Controls.Add(lblYear);
+            groupBoxCarInfo.Controls.Add(lblYearLabel);
+            groupBoxCarInfo.Controls.Add(lblManufacturer);
+            groupBoxCarInfo.Controls.Add(lblManufacturerLabel);
+            groupBoxCarInfo.Controls.Add(lblModel);
+            groupBoxCarInfo.Controls.Add(lblModelLabel);
+            groupBoxCarInfo.Controls.Add(lblCarID);
+            groupBoxCarInfo.Controls.Add(lblCarIDLabel);
+            groupBoxCarInfo.Location = new Point(12, 129);
+            groupBoxCarInfo.Name = "groupBoxCarInfo";
+            groupBoxCarInfo.Size = new Size(387, 112);
+            groupBoxCarInfo.TabIndex = 2;
+            groupBoxCarInfo.TabStop = false;
+            groupBoxCarInfo.Text = "Car Information";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(173, 531);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 28);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            btnClose.BackColor = Color.SlateGray;
+            btnClose.Location = new Point(749, 204);
+            btnClose.Margin = new Padding(4);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(168, 35);
+            btnClose.TabIndex = 3;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += BtnClose_Click;
             // 
-            // OrderCarPartDetail
+            // OrderCarDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 572);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.groupBoxCarInfo);
-            this.Controls.Add(this.groupBoxCustomerInfo);
-            this.Controls.Add(this.groupBoxOrderInfo);
-            this.Name = "OrderCarPartDetail";
-            this.Text = "Order Car Detail";
-            this.groupBoxOrderInfo.ResumeLayout(false);
-            this.groupBoxOrderInfo.PerformLayout();
-            this.groupBoxCustomerInfo.ResumeLayout(false);
-            this.groupBoxCustomerInfo.PerformLayout();
-            this.groupBoxCarInfo.ResumeLayout(false);
-            this.groupBoxCarInfo.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = CarStoreApp1.Properties.Resources.pngtree_grunge_wall_texture_scratched_off_white_background_image_77414710;
+            ClientSize = new Size(929, 259);
+            Controls.Add(btnClose);
+            Controls.Add(groupBoxCarInfo);
+            Controls.Add(groupBoxCustomerInfo);
+            Controls.Add(groupBoxOrderInfo);
+            MaximizeBox = false;
+            Name = "OrderCarDetail";
+            Text = "Order Car Detail";
+            groupBoxOrderInfo.ResumeLayout(false);
+            groupBoxOrderInfo.PerformLayout();
+            groupBoxCustomerInfo.ResumeLayout(false);
+            groupBoxCustomerInfo.PerformLayout();
+            groupBoxCarInfo.ResumeLayout(false);
+            groupBoxCarInfo.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
