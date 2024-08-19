@@ -35,12 +35,17 @@
             btnViewCars = new Button();
             btnDashboard = new Button();
             panelMainContent = new Panel();
+            lblCarStores = new Label();
+            pictureBox1 = new PictureBox();
             panelSideMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelSideMenu
             // 
             panelSideMenu.BackColor = Color.LightBlue;
+            panelSideMenu.Controls.Add(lblCarStores);
+            panelSideMenu.Controls.Add(pictureBox1);
             panelSideMenu.Controls.Add(btnLogout);
             panelSideMenu.Controls.Add(btnOrders);
             panelSideMenu.Controls.Add(btnViewCarParts);
@@ -49,6 +54,7 @@
             panelSideMenu.Dock = DockStyle.Left;
             panelSideMenu.Location = new Point(0, 0);
             panelSideMenu.Name = "panelSideMenu";
+            panelSideMenu.Padding = new Padding(0, 60, 0, 0);
             panelSideMenu.Size = new Size(131, 612);
             panelSideMenu.TabIndex = 1;
             // 
@@ -72,7 +78,7 @@
             btnOrders.Dock = DockStyle.Top;
             btnOrders.Font = new Font("Tahoma", 9F, FontStyle.Bold);
             btnOrders.ForeColor = SystemColors.MenuText;
-            btnOrders.Location = new Point(0, 163);
+            btnOrders.Location = new Point(0, 223);
             btnOrders.Name = "btnOrders";
             btnOrders.Size = new Size(131, 48);
             btnOrders.TabIndex = 4;
@@ -86,7 +92,7 @@
             btnViewCarParts.Dock = DockStyle.Top;
             btnViewCarParts.Font = new Font("Tahoma", 9F, FontStyle.Bold);
             btnViewCarParts.ForeColor = SystemColors.MenuText;
-            btnViewCarParts.Location = new Point(0, 110);
+            btnViewCarParts.Location = new Point(0, 170);
             btnViewCarParts.Name = "btnViewCarParts";
             btnViewCarParts.Size = new Size(131, 53);
             btnViewCarParts.TabIndex = 3;
@@ -100,7 +106,7 @@
             btnViewCars.Dock = DockStyle.Top;
             btnViewCars.Font = new Font("Tahoma", 9F, FontStyle.Bold);
             btnViewCars.ForeColor = SystemColors.MenuText;
-            btnViewCars.Location = new Point(0, 56);
+            btnViewCars.Location = new Point(0, 116);
             btnViewCars.Name = "btnViewCars";
             btnViewCars.Size = new Size(131, 54);
             btnViewCars.TabIndex = 2;
@@ -114,7 +120,7 @@
             btnDashboard.Dock = DockStyle.Top;
             btnDashboard.Font = new Font("Tahoma", 9F, FontStyle.Bold);
             btnDashboard.ForeColor = SystemColors.MenuText;
-            btnDashboard.Location = new Point(0, 0);
+            btnDashboard.Location = new Point(0, 60);
             btnDashboard.Name = "btnDashboard";
             btnDashboard.Size = new Size(131, 56);
             btnDashboard.TabIndex = 1;
@@ -130,6 +136,28 @@
             panelMainContent.Size = new Size(844, 612);
             panelMainContent.TabIndex = 0;
             // 
+            // lblCarStores
+            // 
+            lblCarStores.AutoSize = true;
+            lblCarStores.BackColor = Color.DarkSlateGray;
+            lblCarStores.Font = new Font("Times New Roman", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblCarStores.ForeColor = SystemColors.ControlLightLight;
+            lblCarStores.Location = new Point(7, 18);
+            lblCarStores.Name = "lblCarStores";
+            lblCarStores.Size = new Size(116, 28);
+            lblCarStores.TabIndex = 5;
+            lblCarStores.Text = "Car Stores";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.DarkSlateGray;
+            pictureBox1.Location = new Point(0, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(131, 63);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // CustomerForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -141,10 +169,14 @@
             Name = "CustomerForm";
             Text = "Customer Dashboard";
             panelSideMenu.ResumeLayout(false);
+            panelSideMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
+        private Label lblCarStores;
+        private PictureBox pictureBox1;
     }
 }

@@ -1,64 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Forms\post-login-admin\admin-controls\CarManagementControl.cs">
+    <Compile Update="src\Admin\Admin_Controls\CarManagementControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-controls\CarPartsManagementControl.cs">
+    <Compile Update="src\Admin\Admin_Controls\CarPartsManagementControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-controls\CustomerManagementControl.cs">
+    <Compile Update="src\Admin\Admin_Controls\CustomerManagementControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-controls\DashboardControl.cs">
+    <Compile Update="src\Admin\Admin_Controls\DashboardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-controls\OrderManagementControl.cs">
+    <Compile Update="src\Admin\Admin_Controls\OrderManagementControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-controls\ReportControl.cs">
+    <Compile Update="src\Admin\Admin_Controls\ReportControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-sub-window\CustomerDetailForm.cs">
+    <Compile Update="src\Admin\Admin_Sub_Form\CustomerDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-sub-window\OrderCarDetail.cs">
+    <Compile Update="src\Admin\Admin_Sub_Form\OrderCarDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\admin-sub-window\OrderCarPartDetail.cs">
+    <Compile Update="src\Admin\Admin_Sub_Form\OrderCarPartDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-admin\AdminForm.cs">
+    <Compile Update="src\Admin\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-controls\DashboardControl.cs">
+    <Compile Update="src\Customer\Customer_Controls\DashboardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-controls\OrderControl.cs">
+    <Compile Update="src\Customer\Customer_Controls\OrderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-controls\ViewCarControl.cs">
+    <Compile Update="src\Customer\Customer_Controls\ViewCarControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-controls\ViewCarPartControl.cs">
+    <Compile Update="src\Customer\Customer_Controls\ViewCarPartControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-sub-window\OrderCarDetail.cs">
+    <Compile Update="src\Customer\Customer_Sub_Form\OrderCarDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-sub-window\OrderCarPartDetail.cs">
+    <Compile Update="src\Customer\Customer_Sub_Form\OrderCarPartDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\customer-sub-window\ViewCarDetail.cs">
+    <Compile Update="src\Customer\Customer_Sub_Form\ViewCarDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\post-login-customer\CustomerForm.cs">
+    <Compile Update="src\Customer\CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\pre-login\LoginForm.cs">
+    <Compile Update="src\Auth\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\pre-login\RegisterForm.cs">
+    <Compile Update="src\Auth\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
