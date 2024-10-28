@@ -35,6 +35,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
 
                     // Number of Customers
                     SqlCommand cmdCustomers = new SqlCommand("SELECT COUNT(*) FROM Customer", connection);
+                    //cast int
                     int customersCount = (int)cmdCustomers.ExecuteScalar();
                     lblCustomersCount.Text = $"Number of Customers: {customersCount}";
 

@@ -174,6 +174,7 @@ namespace CarStoreApp.Forms.post_login_customer.customer_controls
                     int orderID = (int)insertOrderCmd.ExecuteScalar();
 
                     // Insert items into OrderItem table and update CarPart quantity
+                    //foreach row count iteration 
                     foreach (DataGridViewRow row in cartGridView.Rows)
                     {
                         string partName = row.Cells["PartName"].Value.ToString();

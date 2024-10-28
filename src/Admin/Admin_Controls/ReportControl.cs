@@ -63,10 +63,13 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
+                //format
                 Filter = "PDF Files|*.pdf",
+                //title name
                 Title = "Save Report as PDF"
             };
 
+            //save path location form open
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog.FileName;
@@ -76,6 +79,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                     using (FileStream stream = new FileStream(filePath, FileMode.Create))
                     {
                         Document pdfDoc = new Document(PageSize.A4, 25, 25, 30, 30);
+                        //format
                         PdfWriter.GetInstance(pdfDoc, stream);
                         pdfDoc.Open();
                         pdfDoc.Add(new Paragraph("Order Report"));

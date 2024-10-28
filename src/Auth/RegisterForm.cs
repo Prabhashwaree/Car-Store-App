@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
 
+
 namespace CarStoreApp
 {
     public partial class RegisterForm : Form
@@ -29,6 +30,7 @@ namespace CarStoreApp
             InitializeComponent();
         }
 
+
         private void BtnRegister_Click(object sender, EventArgs e)
         {
             string firstName = txtFirstName.Text;
@@ -40,8 +42,54 @@ namespace CarStoreApp
             string phone = txtPhone.Text;
             string address = txtAddress.Text;
 
+
             // Insert into database
             string connectionString = "Data Source=DESKTOP-SFJGOEO\\SQLEXPRESS;Initial Catalog=CarStoreDB;Integrated Security=True;Encrypt=False";
+
+
+
+
+            if (string.IsNullOrEmpty(firstName))
+            {
+                MessageBox.Show("First Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(lastName))
+            {
+                MessageBox.Show("Last Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Username is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(nic))
+            {
+                MessageBox.Show("NIC is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Password is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(email) || !IsValidEmail(email))
+            {
+                MessageBox.Show("A valid Email is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(phone) || !IsValidPhoneNumber(phone))
+            {
+                MessageBox.Show("A valid Phone number is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(address))
+            {
+                MessageBox.Show("Address is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
 
             try
             {
@@ -60,9 +108,10 @@ namespace CarStoreApp
                         command.Parameters.AddWithValue("@Phone", phone);
                         command.Parameters.AddWithValue("@Address", address);
 
+
                         connection.Open();
                         int rows = command.ExecuteNonQuery();
-                        if(rows > 0)
+                        if (rows > 0)
                         {
                             MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             //close customer register window
@@ -73,7 +122,7 @@ namespace CarStoreApp
             }
             catch (SqlException sqlEx)
             {
-                // Handle SQL exceptions 
+                // Handle SQL exceptions
                 MessageBox.Show($"Database error: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
@@ -83,7 +132,34 @@ namespace CarStoreApp
             }
 
 
+
+
         }
+
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var mail = new System.Net.Mail.MailAddress(email);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        // Helper method to validate phone number format (basic example)
+        private bool IsValidPhoneNumber(string phone)
+        {
+            return phone.All(char.IsDigit) && phone.Length >= 7 && phone.Length <= 15;
+        }
+
+
+
+
+
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
@@ -92,4 +168,3 @@ namespace CarStoreApp
         }
     }
 }
-

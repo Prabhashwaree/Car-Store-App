@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CarStoreApp.Forms.post_login_admin.admin_controls
 {
     public partial class CarPartsManagementControl : UserControl
@@ -30,16 +31,20 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
         private GroupBox groupBoxDescription;
         private GroupBox groupBoxCarPartDetails;
 
+
         private DataGridView dataGridViewCarParts;
+
 
         private string connectionString = "Data Source=DESKTOP-SFJGOEO\\SQLEXPRESS;Initial Catalog=CarStoreDB;Integrated Security=True;Encrypt=False";
         private int? editCarPartID = null;
+
 
         public CarPartsManagementControl()
         {
             InitializeComponent();
             LoadCarPartsData();
         }
+
 
         private void LoadCarPartsData()
         {
@@ -52,10 +57,14 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
+
                     dataGridViewCarParts.DataSource = dataTable;
+
 
                     // Set the columns to fill the full width of the DataGridView
                     dataGridViewCarParts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
 
 
                     // Add "Edit" button column
@@ -69,6 +78,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                         };
                         dataGridViewCarParts.Columns.Add(editButtonColumn);
                     }
+
 
                     // Add "Delete" button column
                     if (!dataGridViewCarParts.Columns.Contains("Delete"))
@@ -93,16 +103,19 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
             }
         }
 
+
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             //filter cars parts by search text
             FilterCarPartsData(txtSearch.Text);
         }
 
+
         private void FilterCarPartsData(string filterText)
         {
 
-            //match search text with every colounm in car table 
+
+            //match search text with every colounm in car table
             string rowFilter = string.Format("Convert(PartName, 'System.String') LIKE '%{0}%' OR " +
         "Convert(PartNumber, 'System.String') LIKE '%{0}%' OR " +
         "Convert(Price, 'System.String') LIKE '%{0}%' OR " +
@@ -110,6 +123,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
          filterText);
             (dataGridViewCarParts.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
         }
+
 
         private void DataGridViewCars_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -135,6 +149,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
             }
         }
 
+
         private void LoadCarPartDetails(int partID)
         {
             try
@@ -145,8 +160,10 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@PartID", partID);
 
+
                     connection.Open();
                     SqlDataReader reader = command.ExecuteReader();
+
 
                     if (reader.Read())
                     {
@@ -155,6 +172,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                         txtPrice.Text = reader["Price"].ToString();
                         txtDescription.Text = reader["Description"].ToString();
                         txtQuatity.Text = reader["Quantity"].ToString();
+
 
                         btnSave.Text = "Edit";
                     }
@@ -170,6 +188,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
             }
         }
 
+
         private void BtnSaveOrEdit_Click(object sender, EventArgs e)
         {
             if (editCarPartID.HasValue)
@@ -184,90 +203,107 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                 AddNewCarPart();
             }
 
+
             LoadCarPartsData(); // Refresh the table
         }
 
+
         private void AddNewCarPart()
         {
-            string partName = txtPartName.Text;
-            string partNumber = txtPartNumber.Text;
-            decimal price = decimal.Parse(txtPrice.Text);
-            string description = txtDescription.Text;
-            int qty= int.Parse(txtQuatity.Text);
-
-            try
+            if (ValidateInput())
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string query = "INSERT INTO CarPart (PartName, PartNumber, Price, Description,Quantity) VALUES (@PartName, @PartNumber, @Price, @Description ,@Quantity )";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@PartName", partName);
-                    command.Parameters.AddWithValue("@PartNumber", partNumber);
-                    command.Parameters.AddWithValue("@Price", price);
-                    command.Parameters.AddWithValue("@Description", description);
-                    command.Parameters.AddWithValue("@Quantity", qty);
+                string partName = txtPartName.Text;
+                string partNumber = txtPartNumber.Text;
+                decimal price = decimal.Parse(txtPrice.Text);
+                string description = txtDescription.Text;
+                int qty = int.Parse(txtQuatity.Text);
 
-                    connection.Open();
-                    int rows = command.ExecuteNonQuery();
-                    if (rows > 0)
+
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        MessageBox.Show("Car Part added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        string query = "INSERT INTO CarPart (PartName, PartNumber, Price, Description,Quantity) VALUES (@PartName, @PartNumber, @Price, @Description ,@Quantity )";
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@PartName", partName);
+                        command.Parameters.AddWithValue("@PartNumber", partNumber);
+                        command.Parameters.AddWithValue("@Price", price);
+                        command.Parameters.AddWithValue("@Description", description);
+                        command.Parameters.AddWithValue("@Quantity", qty);
+
+
+                        connection.Open();
+                        int rows = command.ExecuteNonQuery();
+                        if (rows > 0)
+                        {
+                            MessageBox.Show("Car Part added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                 }
-            }
-            catch (SqlException sqlEx)
-            {
-                MessageBox.Show($"Database error: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                catch (SqlException sqlEx)
+                {
+                    MessageBox.Show($"Database error: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-            ClearTextFields();
+
+                ClearTextFields();
+            }
         }
+
 
         private void UpdateCarPart(int carPartID)
         {
-            string partName = txtPartName.Text;
-            string partNumber = txtPartNumber.Text;
-            decimal price = decimal.Parse(txtPrice.Text);
-            string description = txtDescription.Text;
-            int qty = int.Parse(txtQuatity.Text);
-
-
-            try
+            if (ValidateInput())
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string query = "UPDATE CarPart SET PartName = @PartName, PartNumber = @PartNumber, Price = @Price, Description = @Description, Quantity = @Quantity WHERE CarPartID = @PartID";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@PartName", partName);
-                    command.Parameters.AddWithValue("@PartNumber", partNumber);
-                    command.Parameters.AddWithValue("@Price", price);
-                    command.Parameters.AddWithValue("@Description", description);
-                    command.Parameters.AddWithValue("@Quantity", qty);
-                    command.Parameters.AddWithValue("@PartID", carPartID);
+                string partName = txtPartName.Text;
+                string partNumber = txtPartNumber.Text;
+                decimal price = decimal.Parse(txtPrice.Text);
+                string description = txtDescription.Text;
+                int qty = int.Parse(txtQuatity.Text);
 
-                    connection.Open();
-                    int rows = command.ExecuteNonQuery();
-                    if (rows > 0)
+
+
+
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        MessageBox.Show("Car Part Updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        string query = "UPDATE CarPart SET PartName = @PartName, PartNumber = @PartNumber, Price = @Price, Description = @Description, Quantity = @Quantity WHERE CarPartID = @PartID";
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@PartName", partName);
+                        command.Parameters.AddWithValue("@PartNumber", partNumber);
+                        command.Parameters.AddWithValue("@Price", price);
+                        command.Parameters.AddWithValue("@Description", description);
+                        command.Parameters.AddWithValue("@Quantity", qty);
+                        command.Parameters.AddWithValue("@PartID", carPartID);
+
+
+                        connection.Open();
+                        int rows = command.ExecuteNonQuery();
+                        if (rows > 0)
+                        {
+                            MessageBox.Show("Car Part Updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                 }
-            }
-            catch (SqlException sqlEx)
-            {
-                MessageBox.Show($"Database error: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                catch (SqlException sqlEx)
+                {
+                    MessageBox.Show($"Database error: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-            ClearTextFields();
+
+                ClearTextFields();
+            }
         }
+
 
         private void DeleteCarPart(int carPartID)
         {
@@ -279,6 +315,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@PartID", carPartID);
 
+
                     connection.Open();
                     int rows = command.ExecuteNonQuery();
                     if (rows > 0)
@@ -288,6 +325,7 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                 }
                 ClearTextFields();
                 LoadCarPartsData();
+
 
             }
             catch (SqlException sqlEx)
@@ -299,7 +337,9 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+
         }
+
 
         private void ClearTextFields()
         {
@@ -311,6 +351,44 @@ namespace CarStoreApp.Forms.post_login_admin.admin_controls
             editCarPartID = null; // Reset edit mode
             btnSave.Text = "Save";
 
+
+        }
+
+
+        private bool ValidateInput()
+        {
+            string partName = txtPartName.Text;
+            string partNumber = txtPartNumber.Text;
+            string priceText = txtPrice.Text;
+            string description = txtDescription.Text;
+            string qtyText = txtQuatity.Text;
+
+
+            // Validate inputs
+            if (string.IsNullOrWhiteSpace(partName) || string.IsNullOrWhiteSpace(partNumber) ||
+                string.IsNullOrWhiteSpace(priceText) || string.IsNullOrWhiteSpace(description) ||
+                string.IsNullOrWhiteSpace(qtyText))
+            {
+                MessageBox.Show("All fields must be filled out.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+
+            if (!decimal.TryParse(priceText, out decimal price))
+            {
+                MessageBox.Show("Price must be a valid decimal number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            //qty cast int
+            if (!int.TryParse(qtyText, out int qty))
+            {
+                MessageBox.Show("Quantity must be a valid integer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+
+            return true;
         }
     }
 }

@@ -163,7 +163,6 @@
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(256, 23);
             txtPrice.TabIndex = 14;
-            txtPrice.TextChanged += txtPrice_TextChanged;
             // 
             // txtYear
             // 
